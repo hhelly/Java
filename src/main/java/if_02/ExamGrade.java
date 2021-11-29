@@ -14,6 +14,23 @@ package if_02;
  *
  * */
 
-public class ExamGrade {
+import java.util.Scanner;
 
+public class ExamGrade {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int examScore = sc.nextInt();
+
+        if(examScore >= 90) {
+            System.out.println("A");
+        } else if(examScore >= 80) {
+            System.out.println("B");
+        } else if(examScore >= 70) {
+            System.out.println("C");
+        } else if(examScore >= 60) {
+            System.out.println("D");
+        } else {
+            System.out.println("F");
+        }
+    }
 }
