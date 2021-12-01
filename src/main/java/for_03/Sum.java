@@ -14,8 +14,19 @@ package for_03;
  *
  * */
 
+import java.util.Scanner;
+
 public class Sum {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        int n = sc.nextInt();
+        int result = 0;
+
+        for(int idx1 = 1 ; idx1 < n+1 ; idx1++) {
+            result += idx1;
+        }
+
+        System.out.println(result);
     }
 }
