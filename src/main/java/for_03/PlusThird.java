@@ -24,8 +24,19 @@ package for_03;
  *
  * */
 
+import java.util.Scanner;
+
 public class PlusThird {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        int t = sc.nextInt();
+
+        for(int idx1 = 0 ; idx1 < t ; idx1++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            System.out.println(a + b);
+        }
     }
 }
